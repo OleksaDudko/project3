@@ -1,0 +1,11 @@
+import "./js/header";
+import "./js/yearNumber";
+import "./js/rock";
+import "./js/calculator";
+import "./js/dinosaur";
+import "./js/football";
+import "./js/team";
+import "./js/scientist";
+import "./js/footer";
+import "./js/modal";
+import "./js/footermodal";
