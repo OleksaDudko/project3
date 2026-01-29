@@ -1,6 +1,6 @@
 const inputYearRef = document.querySelector('.yearNumber__year');
 const btnYearRef = document.querySelector('.yearNumber__button');
-const textYearRef = document.querySelector('.yearNumber__text');
+const textYearRef = document.querySelector('.yearNumber__description');
 
 btnYearRef.addEventListener('click', () => {
   let value = Number(inputYearRef.value);
