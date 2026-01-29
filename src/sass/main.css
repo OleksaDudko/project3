@@ -3,4 +3,21 @@
   margin-bottom: 36px;
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+.yearNumber__title {
+  padding-bottom: 36px;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.yearNumber__list {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+}
+.yearNumber__text {
+  padding-bottom: 36px;
+}
+.yearNumber__result {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
