@@ -1,0 +1,41 @@
+header{
+    width: 1,400px;
+    height: 250px;
+    display: flex;
+}
+
+
+.navigation{
+    width: 1,400px;
+    height: 80px;
+
+    display: flex;
+
+&__image{
+
+  margin-top: 21px;
+  margin-left: 175px;
+
+}
+}
+
+
+  ul{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-left: 81px;
+    text-align: center;
+    list-style: none;
+
+
+
+  }
+
+
+li{
+    text-decoration: none;
+    text-transform:capitalize;
+  }
