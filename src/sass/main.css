@@ -98,19 +98,126 @@ li {
 }
 .yearNumber__title {
   padding-bottom: 36px;
-  border-bottom: 1px solid black;
   text-align: center;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .yearNumber__list {
   padding-top: 36px;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 .yearNumber__text {
   padding-bottom: 36px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .yearNumber__result {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.yearNumber__wrapper {
+  position: relative;
+}
+.yearNumber__wrapper:first-child {
+  margin-right: 149px;
+}
+.yearNumber__wrapper:last-child {
+  margin-right: 202px;
+}
+.yearNumber__year {
+  width: 215px;
+  height: 35px;
+  filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #D7D7D7;
+  padding: 10px 45px 10px 10px;
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.yearNumber__year::-webkit-outer-spin-button, .yearNumber__year::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.yearNumber__button {
+  background-color: #000;
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 0 30px 30px 0;
+  position: absolute;
+  right: 1px;
+  top: 20px;
+  transform: translateY(-50%);
+}
+.yearNumber__description {
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 212px;
+}
+.yearNumber__number {
+  width: 150px;
+  height: 35px;
+  filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #D7D7D7;
+  padding: 10px 45px 10px 10px;
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.yearNumber__btn {
+  background-color: #000;
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 0 30px 30px 0;
+  position: absolute;
+  right: 1px;
+  top: 20px;
+  transform: translateY(-50%);
+}
+.yearNumber__p {
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 224px;
+}
+.yearNumber__line {
+  width: 536px;
+  outline: 1px solid #000;
+  margin: 0 auto;
 }
 
 .rock {
