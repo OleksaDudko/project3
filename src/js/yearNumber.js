@@ -6,7 +6,8 @@ const textYearRef = document.querySelector('.yearNumber__description');
 
 btnYearRef.addEventListener("click", () => {
   let value = Number(inputYearRef.value);
-    console.log(value);
+  console.log(value);
+  
     if ((value % 4 === 0 && value % 100 !== 0) || value % 400 === 0) {
         textYearRef.textContent = "Ви народилися у високосний рік!";
         textYearRef.style.color = "green"
@@ -17,7 +18,13 @@ btnYearRef.addEventListener("click", () => {
         
         textYearRef.textContent = "Ви народилися не у високосний рік!";
         textYearRef.style.color = "red";
-    console.log("Ви народилися не у високосний рік!");
+      console.log("Ви народилися не у високосний рік!");
+       textYearRef.style.color = "none";
+  }
+  if (value === 0) {
+    textYearRef.textContent = "Ви не ввели рік";
+    textYearRef.style.color = "red";
+    
   }
 });
 
@@ -40,4 +47,9 @@ btnNumberRef.addEventListener("click", () => {
     textNumberRef.style.color = "red";
   }
   randomNumber = Math.floor(Math.random() * 10) + 1;
+  if (value === 0) {
+    textNumberRef.textContent = "Ви не ввели число";
+    textNumberRef.style.color = "red";
+    
+  }
 });
