@@ -2,20 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project3/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/project3/assets/icon-68012fb4.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/project3/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project3/assets/index-ff9dd584.css">
+    <link rel="stylesheet" href="/project3/assets/index-8aa7b206.css">
   </head>
   <body>
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project3/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
     <!-- Loads the specified .html file -->
         <header>
 
@@ -82,7 +77,23 @@
   </div>
 </section>
 
-    
+    <section class="rock container">
+      <h2 class="rock__title">Камінь - ножиці - папір</h2>
+      <ul class="rock__list">
+        <li class="rock__item">
+          <button type="button" class="rock__btn">Камінь</button>
+        </li>
+        <li class="rock__item">
+          <button type="button" class="rock__btn">ножиці</button>
+        </li>
+        <li class="rock__item">
+          <button type="button" class="rock__btn">папір</button>
+        </li>
+      </ul>
+      <p class="rock__text" id="message"></p>
+      <p class="rock__text" id="score"></p>
+      <button type="button" class="rock__button">Варіант комп’ютера</button>
+    </section>
     <h2 class="calculator_title">Калькулятор</h2>
 <input type="text" class="calculator_number">
 <ul class="calculator_list">
@@ -95,9 +106,72 @@
 <button type="button" class="calculator_signs"></button>
 <input type="text" class="calculator_result">
     
+    <section class="football container"></section>
     
-    
-    
+    <section class="scientists container">
+      <h2 class="scientists__title">Обери вченого/их</h2>
+      <ul class="scientists__list">
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+        <li class="scientistsitem"><img src="" alt="" id="" class="scientistspicture"></li>
+      </ul>
+      <ul class="scientists__lists">
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Які вчені народилися в 19 ст.
+          </button>
+        </li>
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Відсортувати вчених за алфавітом
+          </button>
+        </li>
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Відсортувати вчених за кількістю прожитих років
+          </button>
+        </li>
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Знайти вченого, який народився найпізніше
+          </button>
+        </li>
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Знайти рік народження Albert Einshtein
+          </button>
+        </li>
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Знайти вчених, прізвища яких починаються на на літеру “С”
+          </button>
+        </li>
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Видалити всіх вчених, ім’я яких починається на “А”
+          </button>
+        </li>
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Знайти вченого, який прожив найдовше і вченого, який прожив найменше
+          </button>
+        </li>
+        <li class="scientists__items">
+          <button type="button" class="scientists__btn">
+            Знайти вчених, в яких співпадають перші літери імені і прізвища
+          </button>
+        </li>
+      </ul>
+    </section>
     
     
     
