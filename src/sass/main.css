@@ -1,3 +1,94 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  outline: 5px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media screen and (min-width: 367px) {
+  .container {
+    width: 367px;
+  }
+}
+@media screen and (min-width: 752px) {
+  .container {
+    width: 752px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+header {
+  width: 1, 400px;
+  height: 250px;
+  display: flex;
+}
+
+.navigation {
+  width: 1, 400px;
+  height: 80px;
+  display: flex;
+}
+.navigation__image {
+  margin-top: 21px;
+  margin-left: 175px;
+}
+
+ul {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  margin-left: 81px;
+  text-align: center;
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 .yearNumber {
   margin-top: 36px;
   margin-bottom: 36px;
@@ -20,4 +111,49 @@
 }
 .yearNumber__result {
   display: flex;
+}
+
+.rock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rock__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.rock__list__btn {
+  width: 100px;
+  height: 100px;
+}
+
+.calculator__title {
+  width: 119px;
+  height: 20px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.scientists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scientists__lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }/*# sourceMappingURL=main.css.map */
