@@ -1,6 +1,6 @@
 header{
     width: 1,400px;
-    height: 250px;
+    height: 80px;
     display: flex;
 }
 
@@ -11,31 +11,53 @@ header{
 
     display: flex;
 
-&__image{
+}
+
+
+.navigation_image{
 
   margin-top: 21px;
   margin-left: 175px;
 
-}
-}
 
 
-  ul{
+}
+
+.header_ul{
     color: rgb(0, 0, 0);
     font-size: 25px;
     display: flex;
     flex-direction: row;
-    gap: 45px;
+    gap: 50px;
     margin-left: 81px;
     text-align: center;
     list-style: none;
-
-
-
   }
 
 
-li{
+.header_li{
     text-decoration: none;
     text-transform:capitalize;
   }
+
+
+.rightSideheader{
+  height: 20px;
+  width: 185px;
+  display: flex;
+  align-items: center;
+
+    margin-left: 361px;
+    margin-top: 30px;
+}
+
+.webSite_thema img{
+height: 20px;
+width: 40px;
+cursor: pointer;
+}
+
+
+.welcome_User{
+margin-left: 41px;
+}
