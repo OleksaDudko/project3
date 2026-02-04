@@ -59,7 +59,7 @@ img {
 
 header {
   width: 1, 400px;
-  height: 250px;
+  height: 80px;
   display: flex;
 }
 
@@ -68,25 +68,45 @@ header {
   height: 80px;
   display: flex;
 }
-.navigation__image {
+
+.navigation_image {
   margin-top: 21px;
   margin-left: 175px;
 }
 
-ul {
+.header_ul {
   color: rgb(0, 0, 0);
   font-size: 25px;
   display: flex;
   flex-direction: row;
-  gap: 45px;
+  gap: 50px;
   margin-left: 81px;
   text-align: center;
   list-style: none;
 }
 
-li {
+.header_li {
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.rightSideheader {
+  height: 20px;
+  width: 185px;
+  display: flex;
+  align-items: center;
+  margin-left: 361px;
+  margin-top: 30px;
+}
+
+.webSite_thema img {
+  height: 20px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.welcome_User {
+  margin-left: 41px;
 }
 
 .yearNumber {
@@ -226,15 +246,71 @@ li {
   align-items: center;
   flex-direction: column;
 }
+.rock__title {
+  margin-top: 36px;
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 1.5;
+}
 .rock__list {
+  margin-bottom: 36px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: center;
 }
-.rock__list__btn {
+.rock__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rock__btn {
+  border: none;
+  border-radius: 30%;
+  background: #000;
+  padding: 20px;
+  color: rgb(238, 238, 238);
   width: 100px;
   height: 100px;
+}
+.rock__button {
+  border: none;
+  margin-bottom: 36px;
+  padding: 10px 20px;
+  color: rgb(238, 238, 238);
+  border-radius: 20px;
+  background: #000;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.rock__line {
+  width: 536px;
+  outline: 1px solid #000;
+  margin: 0 auto;
+}
+
+.color__win {
+  color: #039900;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.color__losse {
+  color: #900;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.color__draws {
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5l;
 }
 
 .calculator {
@@ -347,6 +423,28 @@ li {
   justify-content: center;
   align-items: center;
 }
+.scientists__title {
+  margin-top: 36px;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  line-height: 1.5;
+}
+.scientists__list {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  -moz-column-gap: 59px;
+       column-gap: 59px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.scientists__box {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: #d9d9d9;
+}
 .scientists__lists {
   display: flex;
   flex-wrap: wrap;
@@ -356,4 +454,9 @@ li {
   gap: 20px;
   -moz-column-gap: 30px;
        column-gap: 30px;
+}
+.scientists__line {
+  width: 536px;
+  outline: 1px solid #000;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

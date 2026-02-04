@@ -85,3 +85,17 @@ const scientists = [
     }
 ];
 
+const listEl = document.querySelector(".scientists__list");
+function createItemsMarkup(array){
+const item = array.map(({name, surname, born, dead, id}) => {
+return `
+<li class="scientists__box">
+      <h2>${name}</h2>
+      <h3>${surname}</h3>
+      <p>${born}</p>
+      <p>${dead}</p>
+    </li>`
+}).join("")
+listEl.innerHTML = item
+}
+createItemsMarkup(scientists)
