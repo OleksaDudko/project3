@@ -1,22 +1,22 @@
 const team = [
   {
-    img: '/img/oleksii.webp',
+    img: '../img/oleksii.webp',
     name: 'Олексій',
     done: 'Team lead, секції: calculator і dinosaur',
   },
   {
-    img: '/img/sviatoslav.webp',
+    img: '../img/sviatoslav.webp',
     name: 'Святослав',
     done: 'Scrum-master, секції: yearNumber, team і footer',
   },
   {
-    img: '/img/alina.webp',
+    img: '../img/alina.webp',
     name: 'Аліна',
     done: 'Розробляла секції: rock, football і scientists',
   },
 
   {
-    img: '/img/lev.webp',
+    img: '../img/lev.webp',
     name: 'Лев',
     done: 'Розробляв секції: header, footermodal і modal',
   },
