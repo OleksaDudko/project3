@@ -417,6 +417,113 @@ header {
   stroke: #000;
 }
 
+.team {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.team__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.team__gallery {
+  width: 315px;
+  height: 225px;
+  margin: 0 auto 24px;
+  overflow: hidden;
+  position: relative;
+}
+.team__list {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+  margin: 0;
+  gap: 0;
+}
+.team__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.team__img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.team__text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.team__description {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.team__ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  margin-right: 0;
+  margin-bottom: 60px;
+  gap: 6px;
+}
+.team__box {
+  width: 18px;
+  height: 3px;
+  background-color: #d9d9d9;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.team__box.team__active {
+  width: 30px;
+  background-color: #797979;
+}
+.team__button-ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  right: 190px;
+}
+.team__li:first-child {
+  margin-right: 450.5px;
+}
+.team__li:last-child {
+  margin-left: 485.5px;
+}
+.team__line {
+  width: 536px;
+  outline: 1px solid #000;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 .scientists {
   display: flex;
   flex-direction: column;
