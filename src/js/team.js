@@ -1,22 +1,29 @@
+import oleksii from "/img/oleksii.webp";
+import sviatoslav from "/img/sviatoslav.webp";
+import alina from "/img/alina.webp";
+import lev from "/img/lev.webp";
+
+console.log(oleksii);
+
 const team = [
   {
-    img: './img/oleksii.webp',
+    img: oleksii,
     name: 'Олексій',
     done: 'Team lead, секції: calculator і dinosaur',
   },
   {
-    img:'./img/sviatoslav.webp',
+    img:sviatoslav,
     name: 'Святослав',
     done: 'Scrum-master, секції: yearNumber, team і footer',
   },
   {
-    img:'./img/alina.webp',
+    img:alina,
     name: 'Аліна',
     done: 'Розробляла секції: rock, football і scientists',
   },
 
   {
-    img: './img/lev.webp',
+    img: lev,
     name: 'Лев',
     done: 'Розробляв секції: header, footermodal і modal',
   },
