@@ -9,12 +9,15 @@
     &__title {
         color: #000;
         font-family: 'Montserrat Alternates';
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         margin-bottom: 36px;
         text-align: center;
+            @media screen and (min-width:1440px) {
+                    font-size: 16px;
+                }
     }
 
     &__gallery {
@@ -24,7 +27,10 @@
         overflow: hidden;
         position: relative;
         // border: 5px solid red;
-
+@media screen and (min-width:1440px) {
+        width: 315px;
+            height: 225px;
+    }
 
 
     }
@@ -55,16 +61,23 @@
         object-fit: cover;
         border-radius: 20px;
         margin-bottom: 20px;
+        @media screen and (min-width:1440px) {
+                width: 150px;
+                    height: 150px;
+            }
     }
 
 
     &__text {
         color: #000;
         font-family: 'Montserrat Alternates';
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        @media screen and (min-width:1440px) {
+                font-size: 14px;
+            }
     }
 
     &__description {
@@ -75,6 +88,9 @@
         font-weight: 400;
         line-height: normal;
         margin-bottom: 0;
+        @media screen and (min-width:1440px) {
+                font-size: 12px;
+            }
     }
 
     &__ul {
@@ -93,10 +109,17 @@
         background-color: #d9d9d9;
         border-radius: 3px;
         transition: 0.3s;
+        @media screen and (min-width:1440px) {
+                width: 18px;
+                    height: 3px;
+            }
     }
     &__box.team__active{
         width: 30px;
         background-color: #797979;
+        @media screen and (min-width:1440px) {
+                width: 30px;
+            }
     }
 
     &__button-ul {
@@ -105,20 +128,33 @@
         margin: 0 auto;
         position: absolute;
         top: 50%;
-        right: 190px
+        right: 190px;
+        @media screen and (min-width:1440px) {
+                top: 50%;
+                    right: 190px;
+            }
     }
 
     &__li:first-child {
         margin-right: 450.5px;
+        @media screen and (min-width:1440px) {
+                margin-right: 450.5px;
+            }
     }
 
     &__li:last-child {
         margin-left: 485.5px;
+        @media screen and (min-width:1440px) {
+                margin-left: 485.5px;
+            }
     }
 
     &__line {
         width: 536px;
         outline: 1px solid #000;
         margin: 0 auto;
+        @media screen and (min-width:1440px) {
+                width: 536px;
+            }
     }
 }
