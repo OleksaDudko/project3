@@ -6,6 +6,7 @@ const rockTextEl = document.getElementById('message');
 const rockMessageRef = document.getElementById('computerChoise');
 const rockTextRef = document.getElementById('score');
 const rockBtnRef = document.querySelector('.rock__button');
+const computerVersionEl = document.getElementById("computerVersion");
 
 rockBtnEl.forEach((item, i) => {
   item.addEventListener('click', event => {
@@ -21,6 +22,15 @@ const updateScore = (losses, wins, draws) => {
 Ви - ${wins}
 Нічия - ${draws}`;
 };
+computerVersionEl.addEventListener('click', event => {
+  rockMessageRef.classList.add("is-active")
+})
+const computerVersion = (computerChoise) =>{
+if(rockMessageRef.classList.contains("is-active")){
+  rockMessageRef.textContent = `Варіант комп’ютера: ${computerChoise + 1}`
+  rockMessageRef.classList.remove("is-active")
+}
+}
 
 const chooseWinner = (userChoise, computerChoise) => {
   const draw = 'Нічия';
@@ -50,6 +60,7 @@ const chooseWinner = (userChoise, computerChoise) => {
     rockTextEl.classList.add('color__losse');
   }
   updateScore(losses, wins, draws);
+  computerVersion(computerChoise);
 
   return rockTextEl.textContent;
 };
