@@ -428,12 +428,17 @@ header {
 .team__title {
   color: #000;
   font-family: "Montserrat Alternates";
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 36px;
   text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .team__title {
+    font-size: 16px;
+  }
 }
 .team__gallery {
   width: 315px;
@@ -441,6 +446,12 @@ header {
   margin: 0 auto 24px;
   overflow: hidden;
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .team__gallery {
+    width: 315px;
+    height: 225px;
+  }
 }
 .team__list {
   display: flex;
@@ -466,13 +477,24 @@ header {
   border-radius: 20px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1440px) {
+  .team__img {
+    width: 150px;
+    height: 150px;
+  }
+}
 .team__text {
   color: #000;
   font-family: "Montserrat Alternates";
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (min-width: 1440px) {
+  .team__text {
+    font-size: 14px;
+  }
 }
 .team__description {
   color: #000;
@@ -482,6 +504,11 @@ header {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 0;
+}
+@media screen and (min-width: 1440px) {
+  .team__description {
+    font-size: 12px;
+  }
 }
 .team__ul {
   display: flex;
@@ -499,9 +526,20 @@ header {
   border-radius: 3px;
   transition: 0.3s;
 }
+@media screen and (min-width: 1440px) {
+  .team__box {
+    width: 18px;
+    height: 3px;
+  }
+}
 .team__box.team__active {
   width: 30px;
   background-color: #797979;
+}
+@media screen and (min-width: 1440px) {
+  .team__box.team__active {
+    width: 30px;
+  }
 }
 .team__button-ul {
   display: flex;
@@ -511,16 +549,37 @@ header {
   top: 50%;
   right: 190px;
 }
+@media screen and (min-width: 1440px) {
+  .team__button-ul {
+    top: 50%;
+    right: 190px;
+  }
+}
 .team__li:first-child {
   margin-right: 450.5px;
 }
+@media screen and (min-width: 1440px) {
+  .team__li:first-child {
+    margin-right: 450.5px;
+  }
+}
 .team__li:last-child {
   margin-left: 485.5px;
+}
+@media screen and (min-width: 1440px) {
+  .team__li:last-child {
+    margin-left: 485.5px;
+  }
 }
 .team__line {
   width: 536px;
   outline: 1px solid #000;
   margin: 0 auto;
+}
+@media screen and (min-width: 1440px) {
+  .team__line {
+    width: 536px;
+  }
 }
 
 .scientists {
