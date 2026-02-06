@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 38px;
   }
   &__item {
     display: flex;
@@ -46,7 +47,18 @@
     line-height: 1.5;
   }
   &__line {
-    width: 536px;
+    
+     @media screen and  (min-width:367px) {
+        width: 200px;
+    }
+
+    @media screen and  (min-width:752px) {
+        width: 320px;
+    }
+
+    @media screen and  (min-width:1440px) {
+       width: 536px;
+    }
     outline: 1px solid #000;
     margin: 0 auto;
   }
