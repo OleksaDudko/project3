@@ -1,29 +1,16 @@
-header{
+.header{
     width: 1,400px;
     height: 80px;
     display: flex;
-}
-
-
-.navigation{
-    width: 1,400px;
-    height: 80px;
+  & .container{
 
     display: flex;
-
-}
-
-
-.navigation_image{
-
-  margin-top: 21px;
-  margin-left: 175px;
+    align-items: center;
+    justify-content: center;
+  }
 
 
-
-}
-
-.header_ul{
+    &__ul{
     color: rgb(0, 0, 0);
     font-size: 25px;
     display: flex;
@@ -32,32 +19,115 @@ header{
     margin-left: 81px;
     text-align: center;
     list-style: none;
-  }
-
-
-.header_li{
+    }
+       &__li{
     text-decoration: none;
     text-transform:capitalize;
-  }
-
-
-.rightSideheader{
+    display: flex;
+    align-items: center;
+      }
+  
+  
+  &__rightSideheader{
   height: 20px;
   width: 185px;
   display: flex;
   align-items: center;
+  margin-left: 361px;
+  }
 
-    margin-left: 361px;
-    margin-top: 30px;
+   &__webSite_thema {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   }
+
+    &__thema_bg {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    z-index: 1;
+      }
+
+    &__thema_circle {
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    }
+
+    &__sun-group{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;      
+      }
+
+    &__header__sun_center{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+    }
+
+    &__moon-group {    
+          position: absolute;
+          top: 0px;
+          left: 20px;
+          display: none;
+    }
+    &__welcome_User{
+      margin-left: 41px;
+    }
+  
 }
 
-.webSite_thema img{
+.header{
+  // width: 1,400px;
+  // height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+
+     
+}
+
+
+.active{
+     transform: translateX(20px);
+
+}
+
+.header__box{
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: grey;
+  position: relative;
+  cursor: pointer;
+}
+
+.header__circle{
+width: 20px;
 height: 20px;
-width: 40px;
-cursor: pointer;
+border-radius: 50px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 0;
+left: 0;
 }
 
 
-.welcome_User{
-margin-left: 41px;
+.header__sun{
+  width: 15px;
+  height: 15px;
 }
