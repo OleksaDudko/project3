@@ -6,131 +6,189 @@
   text-align: center;
 
   &__title {
-    padding-bottom: 36px;
+    margin-bottom: 28px;
     text-align: center;
     color: #000;
     font-family: 'Montserrat Alternates';
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (min-width: 752px) {
+      font-size: 24px;
+      margin-bottom: 36px;
+    }
   }
- 
+
   &__list {
-    padding-top: 36px;
+    margin-bottom: 28px;
     display: flex;
     flex-direction: column;
     margin: 0;
-  }
-  
-  &__text {
-    padding-bottom: 36px;
-    color: #000;
-        font-family: "Montserrat Alternates";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+
+    @media screen and (min-width: 752px) {
+      margin-bottom: 36px;
+    }
   }
 
-&__result{
+  &__text {
+    margin-top: 30px;
+    margin-bottom: 28px;
+    color: #000;
+    font-family: 'Montserrat Alternates';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media screen and (min-width: 752px) {
+      font-size: 16px;
+      margin-top: 42px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__result {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 36px;
-}
-&__wrapper{
-    position: relative;
-}
-&__wrapper:first-child {
-    margin-right: 149px;
-}
-&__wrapper:last-child {
-    margin-right: 202px;
-}
+    margin-bottom: 28px;
 
-&__year{
-    width: 215px;
-        height: 35px;
-        filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
-        border: none;
-        outline: none;
-        border-radius: 30px;
-        background-color: #D7D7D7;
-            padding:10px 45px  10px 10px;
-            color: #7E7E7E;
-                font-family: "Montserrat Alternates";
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-}
-&__year::-webkit-outer-spin-button,
-&__year::-webkit-inner-spin-button {
+    @media screen and (min-width: 752px) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__wrapper:first-child {
+    margin-right: auto;
+
+    @media screen and (min-width: 1440px) {
+      margin-right: 149px;
+    }
+  }
+
+  &__wrapper:last-child {
+    margin-right: auto;
+
+    @media screen and (min-width: 1440px) {
+      margin-right: 103px;
+    }
+  }
+
+  &__year {
+    width: auto;
+    height: 35px;
+    filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #d7d7d7;
+    padding: 10px 45px 10px 10px;
+    color: #7e7e7e;
+    font-family: 'Montserrat Alternates';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media screen and (min-width: 752px) {
+      font-size: 12px;
+    }
+  }
+
+  &__year::-webkit-outer-spin-button,
+  &__year::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-&__button{
+  }
+
+  &__button {
     background-color: #000;
     width: 35px;
     height: 35px;
     border: none;
-        outline: none;
-        border-radius: 0 30px 30px 0;
-        position: absolute;
-            right: 1px;
-            top: 20px;
-            transform: translateY(-50%);
-}
-&__description{
-        text-align: right;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 212px;
-}
-&__number{
-    width: 150px;
-        height: 35px;
-        filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
-        border: none;
-        outline: none;
-        border-radius: 30px;
-        background-color: #D7D7D7;
-        padding: 10px 45px 10px 10px;
-        color: #7E7E7E;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-}
-&__btn {
-    background-color: #000;
-        width: 35px;
-        height: 35px;
-        border: none;
-        outline: none;
-        border-radius: 0 30px 30px 0;
-        position: absolute;
-        right: 1px;
-        top: 20px;
-        transform: translateY(-50%);
-}
-&__p{
+    outline: none;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    right: 1px;
+    top: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__description {
     text-align: right;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 224px;
-}
-   &__line {
-       width: 536px;
-       outline: 1px solid #000;
-       margin: 0 auto;
-   }
+    font-family: 'Montserrat Alternates';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 212px;
+
+    @media screen and (min-width: 752px) {
+      font-size: 12px;
+    }
+  }
+
+  &__number {
+    width: auto;
+    height: 35px;
+    filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #d7d7d7;
+    padding: 10px 45px 10px 10px;
+    color: #7e7e7e;
+    font-family: 'Montserrat Alternates';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media screen and (min-width: 752px) {
+      font-size: 12px;
+    }
+  }
+
+  &__btn {
+    background-color: #000;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    right: 1px;
+    top: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__p {
+    text-align: right;
+    font-family: 'Montserrat Alternates';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 224px;
+
+    @media screen and (min-width: 752px) {
+      font-size: 12px;
+    }
+  }
+
+  &__line {
+    width: auto;
+    outline: 1px solid #000;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1440px) {
+      width: 536px;
+    }
+  }
 }
