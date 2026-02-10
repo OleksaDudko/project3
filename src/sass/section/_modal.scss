@@ -1,0 +1,125 @@
+.start_modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 576px;
+    height: 316px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin: 50px auto;
+  transform: translate(-50%, -50%);
+  
+}
+
+.start_modal img {
+    position: absolute;
+    height: auto;
+}
+
+.Vector{
+  top: 30px;
+  left: 531px;
+  width: 15px;
+  cursor: pointer;
+
+}
+
+.sword { 
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 30px;
+}
+
+.puzzle { 
+    bottom: 50px;
+    left: 80px;
+    width: 30px;
+}
+
+.game-development { 
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 30px;
+}
+
+.tic-tac-toe { 
+    bottom: 50px;
+    right: 80px;
+    width: 30px;
+}
+
+.text_group_modal {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.hello_text_group_modal {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.name-modal {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+
+.header_modal_input{
+  width: 169px;
+  height: 35px;
+  border-radius: 50px; 
+  border: none;
+  background-color: #d9d9d9;
+  font-size: 12px;
+  color: #666;
+  outline: none;
+  margin-top: 18px;
+  padding-left: 15px;
+}
+
+.header_modal_input::placeholder {
+  color: #888;
+}
+
+.header_modal_button {
+  width: 105px;
+  height: 35px;
+  padding: 12px;
+  border-radius: 40px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #ccc; 
+  transition: transform 0.1s;
+  margin-top: 18px;
+
+}
+
+.header_modal_button:active {
+  transform: translateY(2px);
+  box-shadow: 2px 2px 0px #ccc;
+}
+
+.modal_form_header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+}
