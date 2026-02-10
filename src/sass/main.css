@@ -117,23 +117,35 @@ header {
   text-align: center;
 }
 .yearNumber__title {
-  padding-bottom: 36px;
+  margin-bottom: 28px;
   text-align: center;
   color: #000;
   font-family: "Montserrat Alternates";
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (min-width: 752px) {
+  .yearNumber__title {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+}
 .yearNumber__list {
-  padding-top: 36px;
+  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
   margin: 0;
 }
+@media screen and (min-width: 752px) {
+  .yearNumber__list {
+    margin-bottom: 36px;
+  }
+}
 .yearNumber__text {
-  padding-bottom: 36px;
+  margin-top: 30px;
+  margin-bottom: 28px;
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 16px;
@@ -141,36 +153,63 @@ header {
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (min-width: 752px) {
+  .yearNumber__text {
+    font-size: 16px;
+    margin-top: 42px;
+    margin-bottom: 36px;
+  }
+}
 .yearNumber__result {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 752px) {
+  .yearNumber__result {
+    margin-bottom: 36px;
+  }
 }
 .yearNumber__wrapper {
   position: relative;
 }
 .yearNumber__wrapper:first-child {
-  margin-right: 149px;
+  margin-right: auto;
+}
+@media screen and (min-width: 1440px) {
+  .yearNumber__wrapper:first-child {
+    margin-right: 149px;
+  }
 }
 .yearNumber__wrapper:last-child {
-  margin-right: 202px;
+  margin-right: auto;
+}
+@media screen and (min-width: 1440px) {
+  .yearNumber__wrapper:last-child {
+    margin-right: 103px;
+  }
 }
 .yearNumber__year {
-  width: 215px;
+  width: auto;
   height: 35px;
   filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
   border: none;
   outline: none;
   border-radius: 30px;
-  background-color: #D7D7D7;
+  background-color: #d7d7d7;
   padding: 10px 45px 10px 10px;
-  color: #7E7E7E;
+  color: #7e7e7e;
   font-family: "Montserrat Alternates";
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (min-width: 752px) {
+  .yearNumber__year {
+    font-size: 12px;
+  }
 }
 .yearNumber__year::-webkit-outer-spin-button, .yearNumber__year::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -191,27 +230,37 @@ header {
 .yearNumber__description {
   text-align: right;
   font-family: "Montserrat Alternates";
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   width: 212px;
 }
+@media screen and (min-width: 752px) {
+  .yearNumber__description {
+    font-size: 12px;
+  }
+}
 .yearNumber__number {
-  width: 150px;
+  width: auto;
   height: 35px;
   filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
   border: none;
   outline: none;
   border-radius: 30px;
-  background-color: #D7D7D7;
+  background-color: #d7d7d7;
   padding: 10px 45px 10px 10px;
-  color: #7E7E7E;
+  color: #7e7e7e;
   font-family: "Montserrat Alternates";
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (min-width: 752px) {
+  .yearNumber__number {
+    font-size: 12px;
+  }
 }
 .yearNumber__btn {
   background-color: #000;
@@ -228,16 +277,26 @@ header {
 .yearNumber__p {
   text-align: right;
   font-family: "Montserrat Alternates";
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   width: 224px;
 }
+@media screen and (min-width: 752px) {
+  .yearNumber__p {
+    font-size: 12px;
+  }
+}
 .yearNumber__line {
-  width: 536px;
+  width: auto;
   outline: 1px solid #000;
   margin: 0 auto;
+}
+@media screen and (min-width: 1440px) {
+  .yearNumber__line {
+    width: 536px;
+  }
 }
 
 .rock {
@@ -635,22 +694,23 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
   text-align: center;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 752px) {
   .team__title {
     font-size: 16px;
+    margin-bottom: 36px;
   }
 }
 .team__gallery {
-  width: 315px;
-  height: 225px;
+  width: 210px;
+  height: 190px;
   margin: 0 auto 24px;
   overflow: hidden;
   position: relative;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 752px) {
   .team__gallery {
     width: 315px;
     height: 225px;
@@ -673,14 +733,14 @@ header {
   flex-shrink: 0;
 }
 .team__img {
-  width: 150px;
-  height: 150px;
+  width: 115px;
+  height: 115px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 752px) {
   .team__img {
     width: 150px;
     height: 150px;
@@ -694,7 +754,7 @@ header {
   font-weight: 400;
   line-height: normal;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 752px) {
   .team__text {
     font-size: 14px;
   }
@@ -708,7 +768,7 @@ header {
   line-height: normal;
   margin-bottom: 0;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 752px) {
   .team__description {
     font-size: 12px;
   }
@@ -719,27 +779,32 @@ header {
   margin: 0 auto;
   align-items: center;
   margin-right: 0;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   gap: 6px;
 }
+@media screen and (min-width: 752px) {
+  .team__ul {
+    margin-bottom: 60px;
+  }
+}
 .team__box {
-  width: 18px;
+  width: 15px;
   height: 3px;
   background-color: #d9d9d9;
   border-radius: 3px;
   transition: 0.3s;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 752px) {
   .team__box {
     width: 18px;
     height: 3px;
   }
 }
 .team__box.team__active {
-  width: 30px;
+  width: 25px;
   background-color: #797979;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 752px) {
   .team__box.team__active {
     width: 30px;
   }
@@ -748,34 +813,61 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  right: 190px;
+  position: relative;
+  top: -175px;
+  right: 1px;
+}
+@media screen and (min-width: 752px) {
+  .team__button-ul {
+    top: -225px;
+    right: 4px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .team__button-ul {
-    top: 50%;
-    right: 190px;
+    top: -225px;
+    right: 5px;
   }
 }
-.team__li:first-child {
-  margin-right: 450.5px;
+.team__button-left {
+  width: 25px;
+  height: 50px;
+  margin-right: 200.5px;
+}
+@media screen and (min-width: 752px) {
+  .team__button-left {
+    width: 35px;
+    height: 75px;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .team__li:first-child {
+  .team__button-left {
+    width: 50px;
+    height: 100px;
     margin-right: 450.5px;
   }
 }
-.team__li:last-child {
-  margin-left: 485.5px;
+.team__button-right {
+  width: 25px;
+  height: 50px;
+  right: 10px;
+}
+@media screen and (min-width: 752px) {
+  .team__button-right {
+    width: 35px;
+    height: 75px;
+    margin-left: 200px;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .team__li:last-child {
+  .team__button-right {
+    width: 50px;
+    height: 100px;
     margin-left: 485.5px;
   }
 }
 .team__line {
-  width: 536px;
+  width: auto;
   outline: 1px solid #000;
   margin: 0 auto;
 }
@@ -870,4 +962,78 @@ header {
   gap: 5px;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  padding-top: 61px;
+  padding-bottom: 59px;
+  display: flex;
+}
+.footer__wrapper {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 752px) {
+  .footer__wrapper {
+    gap: 130px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__wrapper {
+    gap: 186px;
+    padding-right: 174px;
+    padding-left: 175px;
+  }
+}
+.footer__text {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+@media screen and (min-width: 752px) {
+  .footer__text {
+    font-size: 12px;
+  }
+}
+.footer__p {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (min-width: 752px) {
+  .footer__p {
+    font-size: 6px;
+  }
+}
+.footer__wrap {
+  display: flex;
+}
+.footer__input {
+  width: auto;
+  height: 35px;
+  filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #d7d7d7;
+  padding: 10px 45px 10px 10px;
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (min-width: 752px) {
+  .footer__input {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
