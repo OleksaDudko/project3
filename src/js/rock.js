@@ -22,22 +22,22 @@ const updateScore = (losses, wins, draws) => {
 Ви - ${wins}
 Нічия - ${draws}`;
 };
-computerVersionEl.addEventListener('click', event => {
-  rockMessageRef.classList.add("is-active")
-})
-const computerVersion = (computerChoise) =>{
-if(rockMessageRef.classList.contains("is-active")){
-  rockMessageRef.textContent = `Варіант комп’ютера: ${computerChoise + 1}`
-  rockMessageRef.classList.remove("is-active")
-}
-}
+// computerVersionEl.addEventListener('click', event => {
+//   rockMessageRef.classList.add("is-active")
+// })
+// const computerVersion = (computerChoise) =>{
+// if(rockMessageRef.classList.contains("is-active")){
+//   rockMessageRef.textContent = `Варіант комп’ютера: ${computerChoise + 1}`
+//   rockMessageRef.classList.remove("is-active")
+// }
+// }
 
 const chooseWinner = (userChoise, computerChoise) => {
   const draw = 'Нічия';
   const yourWin = 'Ви виграли раунд!';
   const yourLosse = 'Комп’ютер виграв раунд!';
 
-  rockTextEl.classList.remove('colorwin', 'colorlosse', "color__draws");
+  rockTextEl.classList.remove('color__win', 'color__losse', "color__draws");
   if (userChoise === computerChoise) {
     rockTextEl.textContent = draw;
     draws = draws + 1;
@@ -60,7 +60,7 @@ const chooseWinner = (userChoise, computerChoise) => {
     rockTextEl.classList.add('color__losse');
   }
   updateScore(losses, wins, draws);
-  computerVersion(computerChoise);
+  // computerVersion(computerChoise);
 
   return rockTextEl.textContent;
 };
