@@ -38,7 +38,7 @@ calculateEl.addEventListener("click", () => {
         resultEl.textContent = total;
         plusEl.classList.remove("active3");
         if (num2 === 0) {
-            resultEl.textContent = "неможливо"
+            resultEl.textContent = "неможливо";
         }
     } else if (plusEl.classList.contains("active4")) {
         total = num1 - num2;
@@ -46,4 +46,24 @@ calculateEl.addEventListener("click", () => {
         plusEl.classList.remove("active4");
     }
     
+    if (Number.isNaN(num1, num2)) {
+            return resultEl.textContent = `Потрібно ввести число`;
+        }
+})
+
+// ================================================================================
+
+const yearNumberEl = document.querySelector(".yearCalculator__number");
+const yearBtnEl = document.querySelector(".yearCalculator__btn");
+const yearCalculateEl = document.querySelector(".yearCalculator__calculate");
+
+yearBtnEl.addEventListener("click", () => {
+        let totalMinutes = Number(yearNumberEl.value);
+        if (Number.isNaN(totalMinutes)) {
+            return yearCalculateEl.textContent = `Потрібно ввести число`;
+        }
+        let hours = Math.floor(totalMinutes / 60);
+        let minutes = totalMinutes % 60;
+        minutes = minutes.toString().padStart(2,"0");
+        yearCalculateEl.textContent = `${hours}:${minutes} годин`;
 })
