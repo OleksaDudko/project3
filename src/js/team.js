@@ -3,7 +3,6 @@ import sviatoslav from "/img/sviatoslav.webp";
 import alina from "/img/alina.webp";
 import lev from "/img/lev.webp";
 
-console.log(oleksii);
 
 const team = [
   {
