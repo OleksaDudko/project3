@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/project3/assets/icon-68012fb4.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description">
     <title>Vanilla App Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,10 +21,11 @@
     />
     
     <script type="module" crossorigin src="/project3/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project3/assets/index-fc116b12.css">
+    <link rel="stylesheet" href="/project3/assets/index-87cbc9a1.css">
   </head>
-  <body>
+  <body background="img/Group 141.png">
     <!-- Loads the specified .html file -->
+    <main class="main">
     <header class="header">
 
       <div class="container">
@@ -33,7 +35,7 @@
           <ul class="header__ul">
             <li class="header__li">
               Інтерактив<img
-                src="./img/vector-4.png" alt=""
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABKSURBVHgBhY0xEQAgDAMjAQlIqBQkIAEJOEACUpCAJTKUpRTI3S/tXwIAg0TcI6RDpUmCIx0/0eZgJHct74mXtFNIU0nwSSXJHhdSxQpnEjT0tAAAAABJRU5ErkJggg==" alt=""
                 style="margin-left: 8px; cursor: pointer"/>
             </li>
             <li class="header__li">Наша команда</li>
@@ -129,17 +131,17 @@
 <div class="container">
 <h2 class="calculator__title">Калькулятор</h2>
 <div class="calculator__box">
-<input type="text" class="calculator__number" placeholder="Введіть число">
+<input type="text" class="calculator__number" placeholder="Перше число">
 <ul class="calculator__list">
-    <li class="calculator__items"><button type="button" class="calculator__plus">+</button></li>
-    <li class="calculator__items"><button type="button" class="calculator__multiply">*</button></li>
-    <li class="calculator__items"><button type="button" class="calculator__divide">/</button></li>
-    <li class="calculator__items"><button type="button" class="calculator__minus">-</button></li>
+    <li class="calculator__items"><button type="button" aria-label="Плюс" class="calculator__plus">+</button></li>
+    <li class="calculator__items"><button type="button" aria-label="Помножити" class="calculator__multiply">*</button></li>
+    <li class="calculator__items"><button type="button" aria-label="Поділити" class="calculator__divide">/</button></li>
+    <li class="calculator__items"><button type="button" aria-label="Мінус" class="calculator__minus">-</button></li>
 </ul>
-<input type="text" class="calculator__secondNumber" placeholder="Введіть число">
-<button type="button" class="calculator__calculate">=</button>
+<input type="text" class="calculator__secondNumber" placeholder="Друге число">
+<button type="button" aria-label="Розрахувати" class="calculator__calculate">=</button>
 <div class="calculator__resultDiv">
-    <p class="calculator__result"></p>
+    <p class="calculator__result">Відповідь</p>
 </div>
 </div>
 <hr class="calculator__line">
@@ -154,7 +156,7 @@
     <div class="yearCalculator__div">
     <div class="yearCalculator__wrapper">
     <input type="text" placeholder="Введіть число" class="yearCalculator__number">
-    <button type="button" class="yearCalculator__btn"></button>
+    <button type="button" class="yearCalculator__btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADESURBVHgBtVIBDQIxDCwoeAmTgIRJQMIk4IA5eByAA3DA4wAHL+FxUNqnS8rS7z4kXNJkW69361YABUSMFFeKCT+YZL+HFojUo49+TTE7Zoog54HioG50toqjKt4tGAQlEuvkTRIZ/Baz8O51oiiHhkBXblonZsAKWNwtxUuSoVHcWecs8JR1Ah9lFh61sv6FALY7/8IovGQRLkokqTnghzvi92SaJkw+oY8iMnoi7D5UjoO0qdtYFvHwF5EN/ABxnkf6DYb5hec0QpNxAAAAAElFTkSuQmCC" alt="Знайти"></button>
     </div>
     <div class="yearCalculator__line"></div>
     <p class="yearCalculator__calculate">Відповідь</p>
@@ -165,7 +167,7 @@
     
     <section class="football container">
   <div id="field">
-    <img src="https://en.js.cx/clipart/ball.svg" id="ball" /> 
+    <img src="https://en.js.cx/clipart/ball.svg" id="ball" alt="ball"/> 
   </div>
 </div>
 </section>
@@ -298,6 +300,7 @@
         
     </div>
 </footer>
+    </main>
     <div class="start_modal">
       <div class="images-modal">
         <img class="Vector" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB/SURBVHgBnZLBDYAgDEUbXcARHAEncRU3cCTn8eTVm45gSWoCAdp+SH4gJO8F2o5EdHBOzk3Y2jlLPATOJTsCR2b+LxBJASOSJuyRmLAmccM1CQynkseCB0Wwcl45TwSu9NnwnNT+7JZoBTMlnmo3JUirCklPnzPJRh1DInD4AF2uKF/+4EilAAAAAElFTkSuQmCC" alt="" />
