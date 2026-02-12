@@ -105,24 +105,27 @@
 </section>
 
     <section class="rock container">
-      <h2 class="rock__title">Камінь - ножиці - папір</h2>
-      <ul class="rock__list">
-        <li class="rock__item">
-          <button type="button" class="rock__btn">К</button>
-        </li>
-        <li class="rock__item">
-          <button type="button" class="rock__btn">н</button>
-        </li>
-        <li class="rock__item">
-          <button type="button" class="rock__btn">п</button>
-        </li>
-      </ul>
-      <p class="rock__text" id="message"></p>
-      <p class="rock__text" id="score"></p>
-      <!-- <p class="rock__message" id="computerChoise"></p> -->
-      <button type="button" class="rock__button">Варіант комп’ютера</button>
-      <div class="rock__line"></div>
-    </section>
+  <h2 class="rock__title">Камінь - ножиці - папір</h2>
+  <ul class="rock__list">
+    <li class="rock__item">
+      <button type="button" class="rock__btn">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAWnSURBVHgB7VhZSFxXGD535o4mRmPVqGlIjYqYRLQhEQpNJU4foiTxoQohNpiihQaMpIlJahuSNBYfqlAUte2Lu6WCT9La4lLFuqBWiltFUdzXaMV915nb77915Gac0dl8CX4w3Jlz/nP+7/zrucPYIQ7x5oFjpkFm8KCJEIlNTk7WCUZia2trs7q6OgTLee1NeWYZEDnSpVpYWOiPjo4+PTc3JxiycGVlRRUXFxd45cqVXwoLCwNu3bpVT3tJN7YYOTxljY2NhXZ2du9wHCfgw62urv7h7+8fjzk5Pio9e8jr6+sf+fn5fYG1LtIJc12sIbdJypubm38YGxsb6O3tre3u7q5bWlqqPnPmTDgJ5Ofnn98mqQuqmpqav3ieP8YsCNH60L02MzPTJR3TgnxoaOgTIrnXZklJSR+ura0taY+bakGN5Yhcv6Oj43nNmA5ZFaz40+LiYhvi8m99OmUymVytVu8eZ6aByM0Dg05OTj57kNuRP378+CV7e3v/nJwcb11619fXu48ePXosKCiI3Gxe8mZkZCglLjM00eQdHR1fYtm6nnnZxMREFu179+7dt5n+eN0fUBTb19dXy0yoAnDjChLoJdPtPR5eiSeSmZmZ7xlCUiRw584dl+Li4pipqak2KieaAjs4OPgzM46kLD093YPWovQo9KzloefTbZIXtcmIC54/f362trb2O5xmXEMGQT5ZV1f3/ZMnT3xJ7tq1a840PjAwUMWMJAlX/onusVhRUfH59evXT0r078ignt5DXO5ktaylpeUe0nyelG5sbCziFF2lpaUPHzx44KpHkWh+kkcZKWdGJBw6jefm5uYWambz9vkpLrmbN2/aX7169RTJKJVKW02cczjRj/QDxfIzsSWoVMtY/LWG/B66dkiOjo4WG0pSqpzg5eVljQePAp+v8RgOnbsjQ1/AnkxNccFSU1Mvo2b1b7uwBnNu+ymlc+FQRQaS5FpbW5PY7tAQf0dGRrpTjYWh1Cw4ONhRR5UnQVlAQIBDT0/P74JuqKnFkXtoMxzoX2wowBvZzJwS8T9ksbGxIi8eBP0QjHNaAkRYQFLMent70zVIaG9vj0Mzf3nu3LmT7u7utr6+vlaIVR57KNBzFchKa9rv/v37DbDAo9zc3Dk9ykUr3b59+62CgoJZprvIq8vKyjZE4crKym89PDze9/T0VLJ9AAIriYmJHzx9+rRFnwzIzubl5YXFxMRUNzQ0PEQrfG0eybEQEhKSLJfL7eg34q4cdfE3XHwUUjnE5VkYJ4onYl1dXYVsf8ixiQ3bx32QkcGyZBE1Dh4Ja3OSA665uLhcGh8f/9XNzS00PDz8VEJCQs6NGzfSqA9PT08340kJIygUCi4iIuIEQ2mZe/HihR+zEJaXl+dTUlKUTEdtpGzVE+8MZa0Kt/EG7Tne2tra3sbGhg8NDXWikaKiIvIJZaIaxfjEkSNH1MxADA8Pr2IvWysrqy2mFVfY3wXzYuENCws7DZ6r0vm2tracwMDAVK0tBQb3fixNTVhghGbQxioEE4Bs/kebOJLtG0PWInYvMh1lSleb4pjprwOatRy51MfHx8qItZZ8idOvANf7YHjilcQ4q2lpaWQdS72kGQXRWtRHOzs788QKrlavNTU1fYWWJhKC26NpfGRkJIK9XgU0FjO3sO9JjjJ3fDv+2pKTk72kcxoiiK93SQYHsZVuQN2opKREyQ6KIBQsoDzUx8fHy9jescvNzs624BqVIhmTaz13wayYiIqK8sDDztXV9bIB4gIqRrOzs7OXZEyl9dwFs7IGfdkDL+ZUNw3JeA5d5ATCYYkZAbP+WaA3MDT1paqqqo9wla9jelyFF3LhwoULNs+ePRt8/PjxJVzhxjRzDg4OfHZ29it8NbghGAO+vLw8CHG4JZiBrKysAHaAsERxPbAyc4hDmIv/AHM5+5A18vgyAAAAAElFTkSuQmCC" alt="stone" srcset="">
+      </button>
+    </li>
+    <li class="rock__item">
+      <button type="button" class="rock__btn">
+        <img src="data:image/png;base64,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" alt="scissors" srcset="">
+      </button>
+    </li>
+    <li class="rock__item">
+      <button type="button" class="rock__btn"><img src="data:image/png;base64,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" alt="paper" srcset=""></button>
+    </li>
+  </ul>
+  <p class="rock__text" id="message"></p>
+  <p class="rock__text" id="score"></p>
+  <button type="button" class="rock__button">Варіант комп’ютера</button>
+  <div class="rock__line"></div>
+</section>
     <section class="calculator">
 <div class="container">
 <h2 class="calculator__title">Калькулятор</h2>
