@@ -380,6 +380,9 @@ img {
   color: rgb(238, 238, 238);
   width: 100px;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .rock__button {
   border: none;
