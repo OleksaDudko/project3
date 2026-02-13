@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/project3/assets/icon-68012fb4.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description">
+    <meta name="description" />
     <title>Vanilla App Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +14,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -23,10 +23,10 @@
     <script type="module" crossorigin src="/project3/commonHelpers.js"></script>
     <link rel="stylesheet" href="/project3/assets/index-886dd5e4.css">
   </head>
-  <body background="./img/group-141.png">
+  <body background="/img/group-141.png">
     <!-- Loads the specified .html file -->
     <main class="main">
-    <header class="header">
+      <header class="header">
 
       <div class="container">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAAAnCAYAAABpPZRZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASDSURBVHgB7ZrPddw2EMa/l+SoA9MBfNQpmwrM3HQzVYGRCqJUIKYCKxUIqUBSBaIrkHLSky5eV6A96Kw1P3PwCML8gyWxXnnF33t4BAEMAM6QgyHInxGX6zJ9LtMSM98djcoAMzuCyj/pqU/LtMBMNJQkQsWeMXN/f39+d3eXOuU0zI3T9lXzC+KQlekvyRdl+ufh4WGxXq81qjUgKdM5yyGGmQF+Qhyo0DdlOi7T/2VKnp+fU6krJL3B91W8Qpwn7IOT5/wTRCKW8gkn9a5Mb8t0K/nV4eFhUR7zMj2iXg+iXUAL7P+TjHkmY55iPJmTXyHi3GO6Hd4hVPrfLHh6ekoPDg6uUN19VMavqBZbJl7ACvE5lXF+9/rPWtr2zUGhPVzOO9r39WWNtY3r/UqOSqkW5tdHR0daBv/k1W8DJeP0wbnwSSgk+Yv/e+njUtplXp9LJ29QPWU30te1yLvzsWOxvwtUN4fGluHjvkYdUmpsP/7PMLymGDTDYIVKeQlq47lu5Qz9yr9wzhNP/qJlLNZrW7CJz7cTDOGtTPQW9URJNrK/EJKA+t/QNNASVYCgUCmFLtN1Dzn6+dfJU+6j9GWvzR/LbR+sfN7BtNpNQFsl7Quv/Ngru5EU64WrQKXcLrqMYxfRWAtp4h3b6r4Sonz7ckTB/wLbkyuvfIXmXfURtQ+OYYCl9N8W2aROvXLKOb59SumX33lyGuNYSZ++23HXhMFox1f8CYaxruV2oJ2W43sZ448AmSH+RB1e0rhUAhVK11KgcivnXh1dwVJSJvXWFU3h2JkLZLwiVJiKZ2zOhdMgnFD3ZDEyxiPiuSCFSpEa7UpMpS7pkNXOXBaeHJxyX76tzMWgPez9ppMxil+IzFDU0Tap2AbYNRqVp+D1KFSGG7wpxyreDrjGuJjeYD8NYCTlGFjUpyieXIrsWAz2zwBBTFU8RL7ANAxemQFiKD4V+ZCIaAiDV2KAGIonJ2huKUzF4BUYgKEhL/IC02A8+4i4cE7WALuia5EcDBlDMJh+hyXSxyXi4T6Rm4auMTH4Vi8aEedkMM0AqchrxCGWK4xBjuaLGvMGkbfIDcYbwG4hK0znJSmeGDSvK0ecoKJ1oDEG4Jvb0IeMEHal+AT1m6gPFa0lr1C/uYb2u9FaarCZAZS0P8c0dqV4jpuj3u9xF1KeK9TKzp3yTfrfCINwA2hpO2X136Wr6buLc6eNQq10f6uY5/b6E+88c9rlCNSTQZgBbLvefYsedu3j845yjdoNWdeTOHWJU2fdlu2P5ymaT80HOWYI/K3FYNgA9PUFxvESFlfOQaP5BcruRrptzpxz24bHU5HPpSx3zm2e8vZbMVOwizboNsDYLWQr+1KiGoV6IeWx7SlOWmRS1J9NF845j9dyzJw+857+OzFof9O0WwopNse+WRvsHwrNP91aCf1pSqP+LumSYsPPYw5XIptj/+BNeYstE2MLed9IUYetvUz5VzNF5bsuMeOSIvCun6p8UmDGha6Ui++gAaYo364BW/dtPxjUh8Ksl5mZDr4ALm5bMcvB7TkAAAAASUVORK5CYII=" alt="" class="header__image">
@@ -61,7 +61,7 @@
       
     </header>
 
-    <section class="yearNumber">
+      <section class="yearNumber">
   <div class="container">
       <h1 class="yearNumber__title">Популярні інетрактивні ігри</h1>
       <div class="yearNumber__line"></div>
@@ -105,7 +105,7 @@
 </ul>
   </div>
 </section>
-    <section class="rock container">
+      <section class="rock container">
   <h2 class="rock__title">Камінь - ножиці - папір</h2>
   <ul class="rock__list">
     <li class="rock__item">
@@ -127,7 +127,7 @@
   <button type="button" class="rock__button">Варіант комп’ютера</button>
   <div class="rock__line"></div>
 </section>
-    <section class="calculator">
+      <section class="calculator">
 <div class="container">
 <h2 class="calculator__title">Калькулятор</h2>
 <div class="calculator__box">
@@ -164,19 +164,19 @@
     <hr class="yearCalculator__underLine">
 </div>
 </section>
-    <section class="dino">
+      <section class="dino">
     <div class="container">
     <canvas id="game" width="800" height="200"></canvas>
     <hr class="dino__line">
 </div>
 </section>
-    <section class="football container">
+      <section class="football container">
   <div id="field">
     <img src="https://en.js.cx/clipart/ball.svg" id="ball" alt="ball"/> 
   </div>
 </div>
 </section>
-    <section class="team">
+      <section class="team">
         <div class="container">
             
            <h2 class="team__title">Наша команда</h2>
@@ -212,7 +212,7 @@
         </div>
        
       </section>
-    <section class="scientists container">
+      <section class="scientists container">
       <h2 class="scientists__title">Обери вченого/их</h2>
       <ul class="scientists__list"></ul>
       <ul class="scientists__lists">
@@ -265,7 +265,7 @@
       </ul>
        <div class="scientists__line"></div>
     </section>
-    <footer class="footer">
+      <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__svgbox">
