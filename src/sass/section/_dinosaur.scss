@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+.dino {
+    padding-bottom: 36px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+
+    // @media screen and  (max-width:367px) {
+    //   display: none;
+    // }
+
+    @media screen and  (max-width:752px) {
+        display: none;
+    }
+
+    &__line{
+        width: 536.0px;
+        height: 0.0px;
+        stroke-width: 1px;
+        stroke: #000;
+
+        @media screen and  (min-width:367px) {
+        width: 200px;
+    }
+
+    @media screen and  (min-width:752px) {
+        width: 320px;
+    }
+
+    @media screen and  (min-width:1440px) {
+       width: 536px;
+    }
+    }
+}
+
+canvas {
+    background: white;
+    border: 2px solid black;
+    margin-bottom: 36px;
+}

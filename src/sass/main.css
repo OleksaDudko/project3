@@ -661,6 +661,21 @@ img {
   stroke-width: 1px;
   stroke: #000;
 }
+@media screen and (min-width: 367px) {
+  .calculator__line {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 752px) {
+  .calculator__line {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .calculator__line {
+    width: 536px;
+  }
+}
 
 .yearCalculator {
   text-align: center;
@@ -735,12 +750,73 @@ img {
   stroke-width: 1px;
   stroke: #000;
 }
+@media screen and (min-width: 367px) {
+  .yearCalculator__underLine {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 752px) {
+  .yearCalculator__underLine {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .yearCalculator__underLine {
+    width: 536px;
+  }
+}
 
 body {
   margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.dino {
+  padding-bottom: 36px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+@media screen and (max-width: 752px) {
+  .dino {
+    display: none;
+  }
+}
+.dino__line {
+  width: 536px;
+  height: 0px;
+  stroke-width: 1px;
+  stroke: #000;
+}
+@media screen and (min-width: 367px) {
+  .dino__line {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 752px) {
+  .dino__line {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dino__line {
+    width: 536px;
+  }
+}
+
+canvas {
+  background: white;
+  border: 2px solid black;
+  margin-bottom: 36px;
 }
 
 .football {
